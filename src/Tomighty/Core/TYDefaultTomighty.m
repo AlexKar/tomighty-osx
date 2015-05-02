@@ -91,8 +91,9 @@
 - (void)incrementPomodoroCount
 {
     int newCount = pomodoroCount + 1;
-    
-    if(newCount > 4)
+    int resetCount = [preferences getInt:PREF_RESET_COUNT];
+
+    if(resetCount > 0 && newCount > resetCount)
     {
         newCount = 1;
     }

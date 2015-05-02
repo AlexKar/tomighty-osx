@@ -15,6 +15,7 @@ NSString * const PREF_PLAY_SOUND_WHEN_TIMER_STARTS        = @"org.tomighty.sound
 NSString * const PREF_PLAY_SOUND_WHEN_TIMER_GOES_OFF         = @"org.tomighty.sound.play_on_timer_stop";
 NSString * const PREF_PLAY_TICKTOCK_SOUND_DURING_POMODORO  = @"org.tomighty.sound.play_tick_tock_during_pomodoro";
 NSString * const PREF_PLAY_TICKTOCK_SOUND_DURING_BREAK     = @"org.tomighty.sound.play_tick_tock_during_break";
+NSString * const PREF_RESET_COUNT = @"org.tomighty.reset.count";
 
 @implementation TYUserDefaultsPreferences
 {
@@ -33,6 +34,7 @@ NSString * const PREF_PLAY_TICKTOCK_SOUND_DURING_BREAK     = @"org.tomighty.soun
         [defaultValues setObject:[NSNumber numberWithInt:25] forKey:PREF_TIME_POMODORO];
         [defaultValues setObject:[NSNumber numberWithInt:5] forKey:PREF_TIME_SHORT_BREAK];
         [defaultValues setObject:[NSNumber numberWithInt:15] forKey:PREF_TIME_LONG_BREAK];
+        [defaultValues setObject:@(4) forKey:PREF_RESET_COUNT];
         [defaultValues setObject:[NSNumber numberWithInt:true] forKey:PREF_PLAY_SOUND_WHEN_TIMER_STARTS];
         [defaultValues setObject:[NSNumber numberWithInt:true] forKey:PREF_PLAY_SOUND_WHEN_TIMER_GOES_OFF];
         [defaultValues setObject:[NSNumber numberWithInt:true] forKey:PREF_PLAY_TICKTOCK_SOUND_DURING_POMODORO];
