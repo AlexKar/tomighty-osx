@@ -34,7 +34,7 @@ NSString * const PREF_RESET_COUNT = @"org.tomighty.reset.count";
         [defaultValues setObject:[NSNumber numberWithInt:25] forKey:PREF_TIME_POMODORO];
         [defaultValues setObject:[NSNumber numberWithInt:5] forKey:PREF_TIME_SHORT_BREAK];
         [defaultValues setObject:[NSNumber numberWithInt:15] forKey:PREF_TIME_LONG_BREAK];
-        [defaultValues setObject:@(4) forKey:PREF_RESET_COUNT];
+        [defaultValues setObject:[NSNumber numberWithInt:4] forKey:PREF_RESET_COUNT];
         [defaultValues setObject:[NSNumber numberWithInt:true] forKey:PREF_PLAY_SOUND_WHEN_TIMER_STARTS];
         [defaultValues setObject:[NSNumber numberWithInt:true] forKey:PREF_PLAY_SOUND_WHEN_TIMER_GOES_OFF];
         [defaultValues setObject:[NSNumber numberWithInt:true] forKey:PREF_PLAY_TICKTOCK_SOUND_DURING_POMODORO];
