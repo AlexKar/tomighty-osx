@@ -11,7 +11,7 @@
                 <outlet property="check_play_sound_when_timer_starts" destination="UEf-gI-pZ6" id="VdU-XK-1aG"/>
                 <outlet property="check_play_ticktock_sound_during_break" destination="n8X-6J-yb1" id="fEo-Gf-VN3"/>
                 <outlet property="check_play_ticktock_sound_during_pomodoro" destination="XPt-RS-x5J" id="Id6-N6-jWy"/>
-                <outlet property="text_reset_count" destination="QPF-TS-ats" id="hHo-Qu-sPD"/>
+                <outlet property="text_reset_count" destination="E3r-Dn-o2S" id="ZZj-h0-Nyb"/>
                 <outlet property="text_time_long_break" destination="1UG-sw-aRq" id="mez-iY-mzE"/>
                 <outlet property="text_time_pomodoro" destination="sE1-ym-iCF" id="DWF-ut-22a"/>
                 <outlet property="text_time_short_break" destination="N2p-3V-2IY" id="s41-PU-SSB"/>
@@ -23,7 +23,7 @@
         <window title="Tomighty Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" showsToolbarButton="NO" frameAutosaveName="tomighty.window.preferences" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <rect key="contentRect" x="196" y="240" width="324" height="217"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="324" height="217"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -141,21 +141,6 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QPF-TS-ats">
-                                            <rect key="frame" x="127" y="19" width="50" height="22"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="Cp3-LU-wtx">
-                                                <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="309" maximumFractionDigits="3" id="j5l-dk-Ngb">
-                                                    <integer key="minimum" value="1"/>
-                                                    <integer key="maximum" value="999"/>
-                                                </numberFormatter>
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                            <connections>
-                                                <action selector="save_reset_count:" target="-2" id="34J-8X-NVr"/>
-                                            </connections>
-                                        </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a0c-F2-u94">
                                             <rect key="frame" x="183" y="22" width="80" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="pomodoros" id="biq-lt-7r2">
@@ -163,6 +148,18 @@
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E3r-Dn-o2S">
+                                            <rect key="frame" x="127" y="19" width="50" height="22"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="5qp-Mv-i0L">
+                                                <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="Pi4-lR-Kd1"/>
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <action selector="save_reset_count:" target="-2" id="1qs-x3-W7V"/>
+                                            </connections>
                                         </textField>
                                     </subviews>
                                 </view>
@@ -249,5 +246,6 @@
                 <outlet property="delegate" destination="-2" id="Crh-CL-J9w"/>
             </connections>
         </window>
+        <userDefaultsController representsSharedInstance="YES" id="IfR-vu-JZE"/>
     </objects>
 </document>
