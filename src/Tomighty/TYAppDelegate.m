@@ -32,6 +32,8 @@
 #import "TYUserDefaultsPreferences.h"
 
 #import "TYPreferencesWindowController.h"
+#import "TYNotificationsAgent.h"
+#import "TYGrowlAgent.h"
 
 @implementation TYAppDelegate
 {
@@ -40,6 +42,7 @@
     TYSoundAgent *soundAgent;
     TYSyntheticEventPublisher *syntheticEventPublisher;
     TYUserInterfaceAgent *userInterfaceAgent;
+    id<TYNotificationsAgent> notificationsAgent;
     TYPreferencesWindowController *preferencesWindow;
 }
 
@@ -60,10 +63,12 @@
     syntheticEventPublisher = [[TYSyntheticEventPublisher alloc] init];
     userInterfaceAgent = [[TYUserInterfaceAgent alloc] initWith:appUi];
     tomighty = [[TYDefaultTomighty alloc] initWith:timer preferences:preferences eventBus:eventBus];
+    notificationsAgent = [TYGrowlAgent new];
     
     [syntheticEventPublisher publishSyntheticEventsInResponseToOtherEventsFrom:eventBus];
     [soundAgent playSoundsInResponseToEventsFrom:eventBus];
     [userInterfaceAgent updateAppUiInResponseToEventsFrom:eventBus];
+    [notificationsAgent showNotificationInResponseToEventsFrom:eventBus];
     
     [self initMenuItemsIcons:imageLoader];
     

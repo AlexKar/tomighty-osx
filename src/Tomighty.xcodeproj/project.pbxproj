@@ -59,7 +59,10 @@
 		30CFBF1218BD76F7000266B4 /* TYMockSystemTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFBF1118BD76F7000266B4 /* TYMockSystemTimer.m */; };
 		30DB72F618CD4FC800293915 /* TYTomightyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DB72F518CD4FC800293915 /* TYTomightyTests.m */; };
 		30DB72FA18CD54D200293915 /* TYDefaultTomighty.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DB72F918CD54D200293915 /* TYDefaultTomighty.m */; };
+		82B662642F47980B761DE6BF /* TYGrowlAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B66643E1FF98376F5D1E8C /* TYGrowlAgent.m */; };
 		88742E1C44894488BB0F167C /* libPods-TomightyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B1A27968CA44FEFB1DA3DB3 /* libPods-TomightyTests.a */; };
+		AC7423721B00F36C004BBF90 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7423711B00F36C004BBF90 /* Growl.framework */; };
+		ACB137491B00EB8300875B3C /* Growl Registration Ticket.growlRegDict in Resources */ = {isa = PBXBuildFile; fileRef = ACB137481B00EB8300875B3C /* Growl Registration Ticket.growlRegDict */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +89,7 @@
 
 /* Begin PBXFileReference section */
 		0B1A27968CA44FEFB1DA3DB3 /* libPods-TomightyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TomightyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28901BB77801EBB99E3207D6 /* Pods-TomightyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomightyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TomightyTests/Pods-TomightyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		300AE29118D1444400264309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PreferencesWindow.xib; sourceTree = "<group>"; };
 		300AE29318D1471F00264309 /* TYPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TYPreferencesWindowController.h; path = Core/UI/TYPreferencesWindowController.h; sourceTree = "<group>"; };
 		300AE29418D1471F00264309 /* TYPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TYPreferencesWindowController.m; path = Core/UI/TYPreferencesWindowController.m; sourceTree = "<group>"; };
@@ -174,7 +178,12 @@
 		30DB72F718CD54C000293915 /* TYTomighty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TYTomighty.h; path = Core/TYTomighty.h; sourceTree = "<group>"; };
 		30DB72F818CD54D200293915 /* TYDefaultTomighty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TYDefaultTomighty.h; path = Core/TYDefaultTomighty.h; sourceTree = "<group>"; };
 		30DB72F918CD54D200293915 /* TYDefaultTomighty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TYDefaultTomighty.m; path = Core/TYDefaultTomighty.m; sourceTree = "<group>"; };
-		C85B4050EDD04BD5964B5A05 /* Pods-TomightyTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomightyTests.xcconfig"; path = "../Pods/Pods-TomightyTests.xcconfig"; sourceTree = "<group>"; };
+		5D238924205BC2FDA3A92EE0 /* Pods-TomightyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomightyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TomightyTests/Pods-TomightyTests.release.xcconfig"; sourceTree = "<group>"; };
+		82B66209F89FF2084E33AE29 /* TYNotificationsAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYNotificationsAgent.h; sourceTree = "<group>"; };
+		82B66643E1FF98376F5D1E8C /* TYGrowlAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGrowlAgent.m; sourceTree = "<group>"; };
+		82B66B976DE4C299F0890EBC /* TYGrowlAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGrowlAgent.h; sourceTree = "<group>"; };
+		AC7423711B00F36C004BBF90 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = ../../../../../Library/Frameworks/Growl.framework; sourceTree = "<group>"; };
+		ACB137481B00EB8300875B3C /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Growl Registration Ticket.growlRegDict"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +191,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC7423721B00F36C004BBF90 /* Growl.framework in Frameworks */,
 				304AF81618BD04BE00A2EA74 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +232,9 @@
 				3025AE5218D35B2B00BC4207 /* TYSoundAgent.m */,
 				3025AE5318D35B2B00BC4207 /* TYUserInterfaceAgent.h */,
 				3025AE5418D35B2B00BC4207 /* TYUserInterfaceAgent.m */,
+				82B66643E1FF98376F5D1E8C /* TYGrowlAgent.m */,
+				82B66B976DE4C299F0890EBC /* TYGrowlAgent.h */,
+				82B66209F89FF2084E33AE29 /* TYNotificationsAgent.h */,
 			);
 			name = Agent;
 			sourceTree = "<group>";
@@ -284,6 +297,7 @@
 				304AF83918BD04BF00A2EA74 /* TomightyTests */,
 				304AF81418BD04BE00A2EA74 /* Frameworks */,
 				304AF81318BD04BE00A2EA74 /* Products */,
+				81D9EEF56808E3E246322C87 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -299,6 +313,7 @@
 		304AF81418BD04BE00A2EA74 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AC7423711B00F36C004BBF90 /* Growl.framework */,
 				0B1A27968CA44FEFB1DA3DB3 /* libPods-TomightyTests.a */,
 				304AF81518BD04BE00A2EA74 /* Cocoa.framework */,
 				304AF83418BD04BE00A2EA74 /* XCTest.framework */,
@@ -327,6 +342,7 @@
 				300AE29018D1444400264309 /* PreferencesWindow.xib */,
 				304AF82D18BD04BE00A2EA74 /* Images.xcassets */,
 				304AF81C18BD04BE00A2EA74 /* Supporting Files */,
+				ACB137481B00EB8300875B3C /* Growl Registration Ticket.growlRegDict */,
 			);
 			path = Tomighty;
 			sourceTree = "<group>";
@@ -356,7 +372,6 @@
 		304AF83A18BD04BF00A2EA74 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C85B4050EDD04BD5964B5A05 /* Pods-TomightyTests.xcconfig */,
 				304AF83B18BD04BF00A2EA74 /* TomightyTests-Info.plist */,
 				304AF83C18BD04BF00A2EA74 /* InfoPlist.strings */,
 			);
@@ -481,6 +496,15 @@
 			name = Mock;
 			sourceTree = "<group>";
 		};
+		81D9EEF56808E3E246322C87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28901BB77801EBB99E3207D6 /* Pods-TomightyTests.debug.xcconfig */,
+				5D238924205BC2FDA3A92EE0 /* Pods-TomightyTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -568,6 +592,7 @@
 				30C383CF18CFC9FC00FABFFE /* icon-status-pomodoro.tiff in Resources */,
 				30C383D718CFCA6B00FABFFE /* timer_start.wav in Resources */,
 				304AF82E18BD04BE00A2EA74 /* Images.xcassets in Resources */,
+				ACB137491B00EB8300875B3C /* Growl Registration Ticket.growlRegDict in Resources */,
 				30C383CC18CFC9FC00FABFFE /* icon-start-short-break.tiff in Resources */,
 				30C383D118CFC9FC00FABFFE /* icon-status-alternate.tiff in Resources */,
 				30C383D218CFC9FC00FABFFE /* icon-stop-timer.tiff in Resources */,
@@ -606,7 +631,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-TomightyTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TomightyTests/Pods-TomightyTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B7B8607396F24F888FD9E51D /* Check Pods Manifest.lock */ = {
@@ -647,6 +672,7 @@
 				3025AE5618D35B2B00BC4207 /* TYUserInterfaceAgent.m in Sources */,
 				3025AE5918D35B3700BC4207 /* TYSyntheticEventPublisher.m in Sources */,
 				304AF82918BD04BE00A2EA74 /* TYAppDelegate.m in Sources */,
+				82B662642F47980B761DE6BF /* TYGrowlAgent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -796,6 +822,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Third-party",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks/**",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tomighty/Tomighty-Prefix.pch";
 				INFOPLIST_FILE = "Tomighty/Tomighty-Info.plist";
@@ -808,6 +839,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Third-party",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks/**",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tomighty/Tomighty-Prefix.pch";
 				INFOPLIST_FILE = "Tomighty/Tomighty-Info.plist";
@@ -818,7 +854,7 @@
 		};
 		304AF84718BD04BF00A2EA74 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C85B4050EDD04BD5964B5A05 /* Pods-TomightyTests.xcconfig */;
+			baseConfigurationReference = 28901BB77801EBB99E3207D6 /* Pods-TomightyTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tomighty.app/Contents/MacOS/Tomighty";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -842,7 +878,7 @@
 		};
 		304AF84818BD04BF00A2EA74 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C85B4050EDD04BD5964B5A05 /* Pods-TomightyTests.xcconfig */;
+			baseConfigurationReference = 5D238924205BC2FDA3A92EE0 /* Pods-TomightyTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tomighty.app/Contents/MacOS/Tomighty";
 				COMBINE_HIDPI_IMAGES = YES;
